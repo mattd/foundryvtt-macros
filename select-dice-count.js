@@ -3,7 +3,7 @@ const content =  `
         <div class="form-group">
             <label>Number of Dice:</label>
             <div class="form-fields">
-                <input name="dice-count" value="0">
+                <input name="dice-count" value="1">
             </div>
         </div>
     </form>
@@ -20,5 +20,6 @@ new Dialog({
                 await roll.toMessage();
             }
         }
-    }
+    },
+    default: "roll"
 }).render(true);
